@@ -29,4 +29,4 @@ function sayHello () {
     }
 }
 
-// sayHello();
+sayHello();
