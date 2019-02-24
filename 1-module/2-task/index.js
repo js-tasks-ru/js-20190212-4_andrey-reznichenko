@@ -1,5 +1,4 @@
-'use strict';
-
+"use strict";
 /**
  * Эту функцию трогать не нужно
  */
@@ -12,6 +11,12 @@ function print (text) {
  * чтобы функция sayHello работала корректно
  */
 function isValid (name) {
+    if( name.match(/^(?!\w{4,})|\s|^$/g) ){
+        return false;
+    }
+    return true;
+    // name.indexOf(' ') > -1 || name.length < 4
+    // name.match(/^(?!\w{4,})|\s|^$/g)
 }
 
 function sayHello () {
@@ -25,4 +30,3 @@ function sayHello () {
 }
 
 sayHello();
-
